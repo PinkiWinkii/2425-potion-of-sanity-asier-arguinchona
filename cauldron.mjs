@@ -1,4 +1,4 @@
-class Cauldron {
+export default  class Cauldron {
     constructor(){
 
     }

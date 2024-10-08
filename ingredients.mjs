@@ -1,4 +1,4 @@
-class Ingredients {
+export default class Ingredients {
     constructor(){
 
     }
