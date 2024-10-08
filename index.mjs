@@ -1,20 +1,17 @@
 import { getData } from "./service.mjs";
 import Ingredients from "./ingredients.mjs";
+import Cauldron from "./cauldron.mjs";
 
 const execute = async () => {
     try
     {
-
-        
         const data = await getData();
-
         //console.log(data);
         
-
         //Creamos los ingredientes
         const ingredients = Ingredients.load(data);
 
-
+        const cauldron = new Cauldron(ingredients);
 
         showIngredients(ingredients.ingredients);
     }
