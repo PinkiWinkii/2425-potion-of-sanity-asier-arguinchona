@@ -10,7 +10,7 @@ export default class Potion {
         const type = effect.type === 'beneficial' ? "Potion" : "Poison";
         const potion_name = `${type} of ${effect.name}`;
         const time = 10;
-        return new Potion(potion_name, value, weight, time);
+        return new Potion(potion_name, weight, value, time);
     }
 
     static failed() {
@@ -24,7 +24,7 @@ export default class Potion {
 
 class PotionOfSanity extends Potion {
     constructor() {
-        super("Potion of Sanity", 1000, 1, 50);
+        super("Potion of Sanity", 1, 1000, 50);
     }
 }
 
